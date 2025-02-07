@@ -1,5 +1,6 @@
-FROM httpd
-MAINTAINER ramya
-LABEL this is a basic html code deployment
-COPY index.html /usr/local/apache2/htdocs/
-EXPOSE 80
+FROM ubuntu
+run yum update -y
+run yum install java-17 -y
+run yum install git -y
+run yum install maven -y
+run git clone u
