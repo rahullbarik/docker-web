@@ -1,8 +1,8 @@
 FROM ubuntu
-run yum update -y
-run yum install java-17 -y
-run yum install git -y
-run yum install maven -y
-run git clone https://github.com/rahullbarik/maven-project-utils.git
-run cd maven-project-utils
-run mvn clean package
+RUN yum update -y
+RUN yum install java-17 -y
+RUN yum install git -y
+RUN yum install maven -y
+RUN git clone https://github.com/rahullbarik/maven-project-utils.git
+RUN cd maven-project-utils
+RUN mvn clean package
